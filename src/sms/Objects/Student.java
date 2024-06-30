@@ -1,5 +1,5 @@
 
-package sms;
+package sms.Objects;
 
 public class Student {
     private int id;

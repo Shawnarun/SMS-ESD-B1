@@ -4,6 +4,9 @@
  */
 package sms;
 
+import sms.Util.SmsDisplay;
+import sms.Service.ServiceImpl.StudentServiceImpl;
+import sms.Service.StudentService;
 import java.util.Scanner;
 
 /**
@@ -30,16 +33,16 @@ public class SMS {
                     service.saveStudent();
                     break;
                  case 2:
-                  System.out.println("2");
+                    service.updateStudent();
                      break;
                  case 3:
-                     System.out.println("3");
+                     service.deleteStudent();
                      break;
                  case 4:
                     System.out.println("4");
                      break;
                  case 5:
-                    System.out.println("");
+                    service.searchStudent();
                      break;
                 case 6:
                     // Exit the application.
